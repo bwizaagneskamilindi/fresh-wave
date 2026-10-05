@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)file:///C:/Users/HP/Downloads/FIRST%20WAVE%20Flyer%20(2).html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FIRST WAVE: Your first year starts here</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./FIRST WAVEEEEE_files/css2" rel="stylesheet">
+<style>
+  :root {
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    --page: #f1e6ea;
+    --page-text: #6b4452;
+    --wine: #5a0e2a;
+    --wine-deep: #3a0818;
+    --pink: #ff7fae;
+    --blush: #fbc9d8;
+    --cream: #fff4ec;
+    --gold: #f4c874;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --page: #170a10; --page-text: #c9a5b3; }
+  }
+  :root[data-theme="dark"] { --page: #170a10; --page-text: #c9a5b3; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--page-text);
+    font-family: "Quicksand", "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+    min-height: 100vh;
+    display: flex; flex-direction: column; align-items: center;
+    padding: 24px 16px 32px;
+  }
+
+  .flyer {
+    width: 100%; max-width: 680px;
+    aspect-ratio: 8.5 / 11;
+    background: radial-gradient(120% 80% at 50% 0%, #7a1a3d 0%, var(--wine) 45%, var(--wine-deep) 100%);
+    color: var(--cream);
+    border-radius: 6px;
+    box-shadow: 0 18px 50px rgba(40, 0, 15, .35);
+    position: relative; overflow: hidden;
+    padding: 5.5% 8% 0;
+    display: flex; flex-direction: column;
+    container-type: inline-size;
+    text-align: center;
+  }
+  .waves { position: absolute; left: 0; bottom: 0; width: 100%; height: 12%; z-index: 0; display: block; }
+  .flyer > *:not(.waves) { position: relative; z-index: 1; }
+
+  h1 {
+    font-family: "Pacifico", "Brush Script MT", cursive;
+    font-weight: 400;
+    font-size: 14cqw;
+    line-height: 1.05;
+    margin: 0;
+    color: var(--cream);
+    text-shadow: .7cqw .7cqw 0 var(--pink);
+  }
+
+  .kicker { font-weight: 700; font-size: 4.3cqw; letter-spacing: .02em; margin: 1.6cqw 0 0; color: var(--gold); }
+  .tagline { font-weight: 700; font-size: 3.9cqw; margin: 1.8cqw 0 0; color: var(--blush); }
+  .lede { font-weight: 500; font-size: 3.1cqw; line-height: 1.45; margin: 1.4cqw auto 0; max-width: 34em; }
+
+  .list { list-style: none; margin: 3.4cqw auto 0; padding: 0; display: grid; gap: 1.3cqw; text-align: left; width: fit-content; }
+  .list li { font-weight: 600; font-size: 3.2cqw; line-height: 1.3; }
+
+  .closing { font-weight: 500; font-size: 3.1cqw; line-height: 1.45; margin: 3.2cqw auto 0; max-width: 34em; }
+  .for-you { font-family: "Pacifico", "Brush Script MT", cursive; font-size: 5cqw; line-height: 1.2; margin: 2.4cqw 0 0; color: var(--pink); }
+
+  .details {
+    margin: auto 0 0;
+    background: var(--cream);
+    color: var(--wine);
+    border-radius: 4cqw;
+    padding: 2.8cqw 3.4cqw 2.8cqw 4.4cqw;
+    box-shadow: 0 8px 20px rgba(30, 0, 12, .35);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 34cqw;
+    align-items: center;
+    gap: 2.4cqw;
+    text-align: left;
+  }
+  dl { margin: 0; display: grid; gap: 1.5cqw; }
+  .row { display: grid; grid-template-columns: 17cqw minmax(0, 1fr); align-items: baseline; gap: 1.5cqw; margin: 0; }
+  .row dt { font-weight: 600; font-size: 2.9cqw; white-space: nowrap; color: #9a5a73; margin: 0; }
+  .row dd { font-weight: 700; font-size: 3.1cqw; margin: 0; line-height: 1.25; }
+  .qr { width: 34cqw; text-align: center; }
+  .qr img { display: block; width: 100%; height: auto; border-radius: 1.2cqw; background: #fff; }
+  .qr p { margin: 1cqw 0 0; font-weight: 700; font-size: 2.7cqw; line-height: 1.2; }
+
+  .foot { margin: 2.2cqw 0 0; padding-bottom: 2.6cqw; font-size: 3cqw; font-weight: 700; color: var(--wine); }
+
+  [contenteditable]:hover { outline: 2px dashed rgba(251, 201, 216, .8); outline-offset: 3px; border-radius: 3px; }
+  .details [contenteditable]:hover, .foot:hover { outline-color: rgba(90, 14, 42, .45); }
+  [contenteditable]:focus { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 3px; }
+  .details [contenteditable]:focus, .foot:focus { outline-color: var(--wine); }
+
+  .hint { font-size: 14px; margin: 18px 0 0; text-align: center; max-width: 680px; line-height: 1.5; }
+  .actions { margin-top: 10px; }
+  button { font: inherit; font-weight: 700; font-size: 14px; background: var(--wine); color: #fff; border: 0; border-radius: 99px; padding: 10px 20px; cursor: pointer; }
+  :root[data-theme="dark"] button { background: var(--pink); color: var(--wine-deep); }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) button { background: var(--pink); color: var(--wine-deep); } }
+  button:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+  @page { size: letter; margin: 0; }
+  @media print {
+    :root { padding: 0; }
+    body { background: #fff; padding: 0; min-height: 0; display: block; }
+    .flyer { max-width: none; width: 8.5in; height: 11in; aspect-ratio: auto; box-shadow: none; border-radius: 0; }
+    .hint, .actions { display: none; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<main class="flyer">
+  <svg class="waves" viewBox="0 0 540 70" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 26 C60 6 110 6 170 24 S290 44 350 22 S470 4 540 22 V70 H0 Z" fill="#fbc9d8" opacity=".9"></path>
+    <path d="M0 40 C70 22 130 26 190 40 S310 58 370 38 S480 22 540 36 V70 H0 Z" fill="#ff7fae"></path>
+  </svg>
+
+  <h1 contenteditable="true" spellcheck="false">First Wave</h1>
+
+  <p class="kicker" contenteditable="true" spellcheck="false">YOUR FIRST YEAR STARTS HERE 💌✨</p>
+  <p class="tagline" contenteditable="true" spellcheck="false">New campus. New faces. New experiences.</p>
+  <p class="lede" contenteditable="true" spellcheck="false">Come meet new people, make connections, have a little fun, and talk about the things nobody really prepares you for. 🫶🏽</p>
+
+  <ul class="list">
+    <li contenteditable="true" spellcheck="false">🎮 Fun games &amp; challenges</li>
+    <li contenteditable="true" spellcheck="false">🤝 Meet people beyond your course</li>
+    <li contenteditable="true" spellcheck="false">🧠 Real conversations about mental health</li>
+    <li contenteditable="true" spellcheck="false">🎶 Music, laughter &amp; good vibes</li>
+    <li contenteditable="true" spellcheck="false">🎁 A few surprises along the way 👀</li>
+  </ul>
+
+  <p class="closing" contenteditable="true" spellcheck="false">Come as you are. Leave with new connections, new memories, and maybe a new friend or two. 💕</p>
+  <p class="for-you" contenteditable="true" spellcheck="false">First years, this one is for YOU.</p>
+
+  <div class="details">
+    <dl>
+      <div class="row"><dt>When</dt><dd contenteditable="true" spellcheck="false">Fri, Oct 23 at 4:00 PM</dd></div>
+      <div class="row"><dt>Where</dt><dd contenteditable="true" spellcheck="false">Emerald Restaurant</dd></div>
+      <div class="row"><dt>Tickets</dt><dd contenteditable="true" spellcheck="false">5K RWF Early Birds</dd></div>
+      <div class="row"><dt>MoMo Pay</dt><dd contenteditable="true" spellcheck="false">Code [2289393]</dd></div>
+    </dl>
+    <div class="qr">
+      <img alt="QR code to register for First Wave" src="data:image/png;base64,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">
+      <p>Scan to register</p>
+    </div>
+  </div>
+
+  <p class="foot" contenteditable="true" spellcheck="false">Questions? Message [0796881195]</p>
+</main>
+
+<p class="hint">Bracketed details are placeholders. Click any text on the flyer to change it, then print or save as PDF.</p>
+<p class="hint">Registration link: <a href="https://docs.google.com/forms/d/e/1FAIpQLSdp_jidnCS05dYGSaAF6Gf10kpQ50YmB2aEOTHO7LVLtLcTcQ/viewform?usp=header" style="color:inherit;font-weight:700;">open the form</a></p>
+<div class="actions"><button type="button" onclick="window.print()">Print or save as PDF</button></div>
+
+
+
+</body></html>
